@@ -41,28 +41,39 @@ We will understand the problem of a real estate company from its CEO and then ap
 
 7. Commit and push
 
-<details>
-<summary>Steps</summary>
-<br>
+    <details>
+    <summary>Steps</summary>
+    <br>
 
-1. Add File
-    1. Add a single file
+    1. Add File
+        1. Add a **single** file
 
-        ``` 
-        git add requirements.txt
+            ``` 
+            git add requirements.txt
+            ```
+
+        2. Add **all** files
+
+            ```
+            git add .
+            ```
+
+    2. To see **status**
+        ```
+        git status
         ```
 
-    2. Add all files
-
+    3. To **commit** with message
         ```
-        git add .
+        git commit -m "Write message here"
         ```
 
-2. To see status
-    ```
-    git status
-    ```
+    4. To **push** changes
+        ```
+        git push origin main
+        ```
 
-3. 
+    </details>
+    <br>
 
-</details>
+8. 
