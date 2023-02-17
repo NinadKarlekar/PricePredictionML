@@ -99,7 +99,8 @@ We will understand the problem of a real estate company from its CEO and then ap
     ```
 
     4. open dropdown and change to ***RAW*** and ***JSON***
-
+    
+    ![p1](https://user-images.githubusercontent.com/88243315/219637062-869ef1ad-a057-4b98-bc5d-37ab5eb2741c.png)
 
 
     5. Paste following code and click on **send**
@@ -125,6 +126,9 @@ We will understand the problem of a real estate company from its CEO and then ap
     ```
 
     6. The prediction value should be visible
+    
+    ![p2](https://user-images.githubusercontent.com/88243315/219636981-69217d0c-ce94-4cae-853a-69276414f9a0.png)
+
 
     
 
