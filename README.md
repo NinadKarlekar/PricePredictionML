@@ -7,6 +7,7 @@ We will understand the problem of a real estate company from its CEO and then ap
 2. [Visual Studio code IDE](https://code.visualstudio.com/download)
 3. [Heroku Account](https://www.heroku.com/)
 4. [Git CLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+5. [Postman](https://www.postman.com/downloads/)
 
 
 ### Steps
@@ -76,4 +77,56 @@ We will understand the problem of a real estate company from its CEO and then ap
     </details>
     <br>
 
-8. 
+8. Create and run [app.py](/app.py)
+
+    ```
+    python app.py
+    ```
+
+9. Test with POSTMAN
+
+    <details>
+    <summary>Steps POSTMAN</summary>
+    <br>
+
+    1. Download and open [Postman](https://www.postman.com/downloads/)
+
+    2. Change method from get to post
+
+    3. Paste the following link
+    ```
+    http://127.0.0.1:5000/predict_api
+    ```
+
+    4. open dropdown and change to ***RAW*** and ***JSON***
+
+
+
+    5. Paste following code and click on **send**
+
+    ```json
+    {
+    "data": {
+        "CRIM": 0.00632,
+        "ZN":18.0,
+        "INDUS":2.31,
+        "CHAS":0.0,
+        "NOX":0.538,
+        "RM":6.575,
+        "AGE":65.2,
+        "DIS":4.0900,
+        "RAD":1.0,
+        "TAX":296,
+        "PTRATIO":15.3,
+        "B":396.90,
+        "LSTAT":4.98
+        }
+    }
+    ```
+
+    6. The prediction value should be visible
+
+    
+
+
+
