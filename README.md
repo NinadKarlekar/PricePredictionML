@@ -181,11 +181,33 @@ We will understand the problem of a real estate company from its CEO and then ap
     python app.py
     ```
 
-12. To deploy in Heroku create [***Procfile***](/Procfile)
+12. Deploy it in [render](https://render.com)
 
-```
-web : gunicorn app:app
-```
+    <details>
+    <summary>Steps</summary>
+       <br>
+
+       1. Visit to `https://render.com` and login using **GitHub**
+
+       2. Create New -> Web service -> connect the project repository -> click on connect.
+
+       3. Give **name** for web service -> choose region and runtime
+
+       4. In **Build Command** insert this
+       ```
+       $ pip install -r requirements.txt
+       ```
+
+       5. In **Start command** insert this
+       ```
+       $ gunicorn app:app
+       ```
+
+       6. Deploy and visit given site
+
+       This project website is:- https://realestateprediction.onrender.com
+
+    </details>
 
 
 
