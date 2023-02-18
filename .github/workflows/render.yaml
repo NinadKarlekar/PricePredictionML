@@ -1,0 +1,44 @@
+# name: Deploy to Render
+# on:
+#   push:
+#     branches:
+#       - main
+
+# # Your workflows jobs.
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Deploy to Render
+#       uses: gonuit/heroku-docker-deploy@v1.3.3
+#       with:
+#         renderEmail: ${{ secrets.RENDER_EMAIL }}
+#         renderPassword: ${{ secrets.RENDER_PASSWORD }}
+#         renderAccount: Ninad Karlekar
+#         renderService: RealEstatePrediction
+#         dockerfile_directory: ./
+#         dockerfile_name: Dockerfile
+
+name: Deploy to Render
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Docker image
+        run: docker build -t Dockerfile .
+      - name: Push Docker image to Render
+        uses: render/render-action@1.3.0
+        with:
+          name: app
+          registry: registry.render.com
+          username: ${{ secrets.RENDER_USERNAME }}
+          password: ${{ secrets.RENDER_PASSWORD }}
+          render_yaml: ./render.yaml
+
