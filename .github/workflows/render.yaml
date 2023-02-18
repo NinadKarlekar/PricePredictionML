@@ -25,15 +25,16 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '**.md'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          paths-ignore:
-            - '**/README.md'
+
+
       - name: Build Docker image
         run: docker build -t your-docker-image .
 
