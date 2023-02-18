@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Deploy to Render
-      uses: renderinc/github-action@1.4.0
+      uses: render-iac/github-actions-render@1.0.0
       with:
         renderEmail: ${{ secrets.RENDER_EMAIL }}
         renderPassword: ${{ secrets.RENDER_PASSWORD }}
