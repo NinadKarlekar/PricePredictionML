@@ -1,7 +1,12 @@
 # PricePredictionML
 We will understand the problem of a real estate company from its CEO and then apply ML to solve it.
 
-[![Deploy to Render](/deploy.svg)](https://realestateprediction.onrender.com)
+
+
+<a href="https://realestateprediction.onrender.com">
+  <img src="/deploy.svg" alt="Image " width=30%>
+</a>
+
 
 ### Software And Tool Requirment
 
