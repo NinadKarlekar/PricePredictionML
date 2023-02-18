@@ -32,6 +32,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build Docker image
-        run: docker build -t Dockerfile .
+        run: docker build -t your-docker-image .
 
 
