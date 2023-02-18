@@ -1,16 +1,18 @@
 # PricePredictionML
 We will understand the problem of a real estate company from its CEO and then apply ML to solve it.
 
+[![Deploy to Render](/deploy.svg)](https://realestateprediction.onrender.com)
+
 ### Software And Tool Requirment
 
 1. [GitHub Account](https://github.com/)
 2. [Visual Studio code IDE](https://code.visualstudio.com/download)
-3. [Heroku Account](https://www.heroku.com/)
+3. [Render Account](https://www.render.com/)
 4. [Git CLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
 5. [Postman](https://www.postman.com/downloads/)
 
 
-### Steps
+### Steps to recreate
 
 1. Go to ***VS CODE*** and open project folder.
 
@@ -220,7 +222,9 @@ EXPOSE $PORT
 CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT app:app
 ```
 
-14. To use GitHub actions Create folder as ***.github*** and inside that create another folder ***workflows*** then create [***main.yaml***](/.github/workflows/main.yaml) inside folder
+14. To use GitHub actions Create folder as ***.github*** and inside that create another folder ***workflows*** then create [***render.yaml***](/.github/workflows/render.yaml) inside folder
+
+
 
 
 
