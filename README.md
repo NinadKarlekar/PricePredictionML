@@ -209,6 +209,19 @@ We will understand the problem of a real estate company from its CEO and then ap
 
     </details>
 
+13. Create a [**Dockerfile**](/Dockerfile)
+
+```
+FROM python:3.7
+COPY . /app
+WORKDIR /app
+RUN pip intall -r requirements.txt
+EXPOSE $PORT
+CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT app:app
+```
+
+14. To use GitHub actions Create folder as ***.github*** and inside that create another folder ***workflows*** then create [***main.yaml***](/.github/workflows/main.yaml) inside folder
+
 
 
 
