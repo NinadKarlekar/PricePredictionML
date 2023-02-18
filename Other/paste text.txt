@@ -7,4 +7,4 @@ pip3 install --upgrade jupyter matplotlib numpy pandas scipy scikit-learn
 
 https://archive.ics.uci.edu/ml/machine-learning-databases/housing/
 
-aaa
+aaabbbbbbbbbbbb

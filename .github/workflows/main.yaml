@@ -15,8 +15,8 @@ jobs:
       with:
         renderEmail: ${{ secrets.RENDER_EMAIL }}
         renderPassword: ${{ secrets.RENDER_PASSWORD }}
-        renderAccount: <your-render-account-name>
-        renderService: <your-render-service-name>
+        renderAccount: Ninad Karlekar
+        renderService: RealEstatePrediction
         dockerfile_directory: ./
         dockerfile_name: Dockerfile
 
