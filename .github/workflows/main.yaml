@@ -1,0 +1,22 @@
+name: Deploy to Render
+on:
+  push:
+    branches:
+      - main
+
+# Your workflows jobs.
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deploy to Render
+      uses: renderinc/github-action@1.4.0
+      with:
+        renderEmail: ${{ secrets.RENDER_EMAIL }}
+        renderPassword: ${{ secrets.RENDER_PASSWORD }}
+        renderAccount: <your-render-account-name>
+        renderService: <your-render-service-name>
+        dockerfile_directory: ./
+        dockerfile_name: Dockerfile
+
