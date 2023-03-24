@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate prediction</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login">
+    <div class="login container">
         <h1>Real Estate prediction</h1>
 
         <form action="{{ url_for('predict')}}" method="post">
@@ -27,15 +28,20 @@
 
             <button type="submit" class="btn btn-primary btn-block btn-large">predict</button><br><br>
 
-
         </form>
     </div>
-{{prediction_text}}
+    <div class="output-container">
+        <span class="output-text">{{prediction_text}}</span>
+    </div>
 
-<div style="text-align: right;">
+    {{prediction_text}}
+
+
+<div class="footer" style="text-align: right;">
     <p>Created by :- Ninad Karlekar</p>
     <p>On :- 18-02-2023</p>
 </div>
+    
 
 </body>
 </html>
